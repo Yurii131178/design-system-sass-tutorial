@@ -1,17 +1,17 @@
 // Властивість display
-$values:
+$display:
   none, inline, block, inline-block, flex, inline-flex, grid, inline-grid;
-@each $value in $values {
+@each $value in $display {
   .d-#{$value} {
     display: $value;
   }
 }
 
 // Властивість position
-$values: relative, absolute, fixed, sticky;
-@each $value in $values {
-  .p-#{$value} {
-    position: $value;
+$positions: relative, absolute, fixed, sticky;
+@each $position in $positions {
+  .p-#{$position} {
+    position: $position;
   }
 }
 
