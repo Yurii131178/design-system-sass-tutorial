@@ -1,6 +1,8 @@
+@use "mixins" as *;
+
 // Властивість justify-content
-$values: start, end, center, stretch, between, around, evenly;
-@each $value in $values {
+$justify-values: start, end, center, stretch, between, around, evenly;
+@each $value in $justify-values {
   .justify-#{$value} {
     @if ($value == start) or ($value == end) {
       justify-content: flex-#{$value};
@@ -13,8 +15,8 @@ $values: start, end, center, stretch, between, around, evenly;
 }
 
 // Властивість align-items
-$values: start, end, center, stretch;
-@each $value in $values {
+$align-values: start, end, center, stretch;
+@each $value in $align-values {
   .items-#{$value} {
     @if ($value == start) or ($value == end) {
       align-items: flex-#{$value};
